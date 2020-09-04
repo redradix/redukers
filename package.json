@@ -15,19 +15,27 @@
   "license": "ISC",
   "author": "Redradix (https://redradix.com)",
   "files": [
-    "./lib/**/*",
-    "./babel.config.js"
+    "dist",
+    "lib",
+    "!*.test.js"
   ],
   "directories": {
     "lib": "./lib",
     "example": "./examples"
   },
-  "main": "./lib/index.js",
+  "main": "./dist/es5/index.js",
+  "module": "./lib/index.js",
   "repository": "https://github.com/redradix/reduckers.git",
   "scripts": {
-    "test": "jest"
+    "build": "yarn build:clean && yarn build:es5",
+    "build:clean": "rm -rf ./dist",
+    "build:es5": "babel ./lib --out-dir ./dist --ignore '**/*.test.js' --source-maps",
+    "test": "jest",
+    "prepack": "yarn build",
+    "preversion": "yarn test"
   },
   "devDependencies": {
+    "@babel/cli": "^7.11.6",
     "@babel/core": "^7.11.6",
     "@babel/preset-env": "^7.11.5",
     "@types/jest": "^26.0.13",
