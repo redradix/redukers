@@ -1,0 +1,22 @@
+{
+  "private": true,
+  "name": "reduckers",
+  "version": "0.0.1",
+  "description": "Reusable Redux atoms",
+  "author": "Redradix",
+  "license": "ISC",
+  "directories": {
+    "lib": "./lib"
+  },
+  "main": "./lib/index.js",
+  "repository": "https://github.com/redradix/reduckers.git",
+  "scripts": {
+    "test": "jest"
+  },
+  "devDependencies": {
+    "@types/jest": "^26.0.13",
+    "jest": "^26.4.2",
+    "ts-jest": "^26.3.0",
+    "typescript": "^4.0.2"
+  }
+}
