@@ -24,7 +24,7 @@
     "example": "./examples"
   },
   "main": "./dist/es5/index.js",
-  "module": "./lib/index.js",
+  "module": "./lib/",
   "repository": "https://github.com/redradix/reduckers.git",
   "scripts": {
     "build": "yarn build:clean && yarn build:es5",
@@ -42,5 +42,6 @@
     "babel-jest": "^26.3.0",
     "jest": "^26.4.2",
     "redux": "^4.0.5"
-  }
+  },
+  "sideEffects": false
 }
