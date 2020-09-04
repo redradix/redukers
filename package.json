@@ -3,10 +3,24 @@
   "name": "reduckers",
   "version": "0.0.1",
   "description": "Reusable Redux atoms",
-  "author": "Redradix",
+  "keywords": [
+    "redux",
+    "boilerplate",
+    "reducers",
+    "selectors",
+    "actions"
+  ],
+  "homepage": "https://github.com/redradix/reduckers#readme",
+  "bugs": "https://github.com/redradix/reduckers/issues",
   "license": "ISC",
+  "author": "Redradix (https://redradix.com)",
+  "files": [
+    "./lib/**/*",
+    "./babel.config.js"
+  ],
   "directories": {
-    "lib": "./lib"
+    "lib": "./lib",
+    "example": "./examples"
   },
   "main": "./lib/index.js",
   "repository": "https://github.com/redradix/reduckers.git",
