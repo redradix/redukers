@@ -57,5 +57,8 @@ See each module for in-depth documentation:
 - [request](./lib/request/): Holds the state of a single request (usually a
   network `fetch`).
 
+- [requestById](./lib/requestById/): Holds the state of a collection of request 
+  (usually a network `fetch`).
+
 - [utils](./lib/utils/): Various convenience utilities to reduce Redux
   boilerplate or create your own redukers.
