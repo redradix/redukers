@@ -21,7 +21,6 @@ function entities(
 ### Action shapes
 
 ```ts
-
 /*
  * [update]: set `payload` as entity collection.
  */
