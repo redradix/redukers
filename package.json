@@ -23,7 +23,7 @@
     "lib": "./lib",
     "example": "./examples"
   },
-  "main": "./dist/es5/index.js",
+  "main": "./dist/es5/",
   "module": "./lib/",
   "repository": "https://github.com/redradix/redukers.git",
   "scripts": {
