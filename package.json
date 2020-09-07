@@ -1,6 +1,6 @@
 {
   "private": true,
-  "name": "reduckers",
+  "name": "redukers",
   "version": "0.0.1",
   "description": "Reusable Redux atoms",
   "keywords": [
@@ -10,8 +10,8 @@
     "selectors",
     "actions"
   ],
-  "homepage": "https://github.com/redradix/reduckers#readme",
-  "bugs": "https://github.com/redradix/reduckers/issues",
+  "homepage": "https://github.com/redradix/redukers#readme",
+  "bugs": "https://github.com/redradix/redukers/issues",
   "license": "ISC",
   "author": "Redradix (https://redradix.com)",
   "files": [
@@ -25,7 +25,7 @@
   },
   "main": "./dist/es5/index.js",
   "module": "./lib/",
-  "repository": "https://github.com/redradix/reduckers.git",
+  "repository": "https://github.com/redradix/redukers.git",
   "scripts": {
     "build": "yarn build:clean && yarn build:es5",
     "build:clean": "rm -rf ./dist",
