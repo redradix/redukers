@@ -1,5 +1,6 @@
+# ToDo
+
 - requestById (que me hace dudar el nombre aún)
-- el entities
 - nombrado mejor (redukers original)
 - README.md
   - incluyendo instrucciones de versionado y publish
