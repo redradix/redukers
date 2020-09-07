@@ -1,13 +1,13 @@
-# redukers/request
+# redukers/requestById
 
-Holds the state of a single request (usually a network `fetch`).
+Holds the state of a collection of request (usually a network `fetch`).
 
 ## API
 
 ### Reducer creator
 
 ```ts
-function request(
+function requestById(
   patterns: {
     start?: Pattern,
     success?: Pattern,
@@ -25,6 +25,7 @@ function request(
  */
 type StartAction = {
   type: string,
+  payload: { id: string }
 }
 
 /*
@@ -32,6 +33,7 @@ type StartAction = {
  */
 type SuccessAction = {
   type: string,
+  payload: { id: string }
 }
 
 /*
@@ -39,7 +41,7 @@ type SuccessAction = {
  */
 type ErrorAction = {
   type: string,
-  payload: any,
+  payload: { id: string, error: string }
   error: true,
 }
 
@@ -48,6 +50,7 @@ type ErrorAction = {
  */
 type ClearAction = {
   type: string,
+  payload: { id: string }
 }
 ```
 
@@ -57,30 +60,30 @@ type ClearAction = {
 /*
  * Returns `true` if the request has never been started, errored, etc.
  */
-function getIsEmpty(state: State): boolean
+function getIsEmptyById(id:string, state: State): boolean
 
 /*
  * Returns `true` if the request is in progress.
  */
-function getIsRequesting(state: State): boolean
+function getIsRequestingById(id:string, state: State): boolean
 
 /*
  * Returns `true` if the request completed succesfully.
  */
-function getIsRequestSucceeded(state: State): boolean
+function getIsRequestSucceededById(id:string, state: State): boolean
 
 /*
  * Returns `true` if the request errored.
  */
-function getIsError(state: State): boolean
+function getIsErrorById(id:string, state: State): boolean
 
 /*
  * Returns the error associated with the request (if any).
  */
-function getError(state: State): any
+function getErrorById(id:string, state: State): any
 
 /*
  * Returns `true` if the request has never been started or is in progress.
  */
-function getIsLoading(state: State): any
+function getIsLoadingById(id:string, state: State): any
 ```
