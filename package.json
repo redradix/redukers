@@ -14,9 +14,8 @@
   "license": "ISC",
   "author": "Redradix (https://redradix.com)",
   "files": [
-    "dist",
-    "lib",
-    "!*.test.js"
+    "dist/**/!(*test*).js?(.map)",
+    "lib/**/!(*test*).js"
   ],
   "directories": {
     "lib": "./lib",
