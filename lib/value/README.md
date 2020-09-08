@@ -2,9 +2,9 @@
 
 Holds a single value.
 
-**WARNING:** This module cannot hold `undefined` values (see
-https://redux.js.org/recipes/structuring-reducers/initializing-state#summary).
-Use `null`, `false` or other appropriate value instead.
+> **WARNING:** This module cannot hold `undefined` values (see
+> https://redux.js.org/recipes/structuring-reducers/initializing-state#summary).
+> Use `null`, `false` or other appropriate value instead.
 
 ## API
 

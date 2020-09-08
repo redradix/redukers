@@ -15,7 +15,7 @@ and its accompanying selectors.
 
 A [reducer](https://redux.js.org/basics/reducers) creator and a set of
 [selectors](https://daveceddia.com/redux-selectors/) to access its internal
-state. THe created reducer reacts to actions matching the configured
+state. The created reducer reacts to actions matching the configured
 `Pattern`s (see below).
 
 Redukers are very minimal, and intended to handle a small slice of state (a
@@ -47,9 +47,9 @@ See each module for in-depth documentation:
 
 - [`value`](./lib/value/): Holds a single value.
 
-  **WARNING:** This module cannot hold `undefined` values (see
-  https://redux.js.org/recipes/structuring-reducers/initializing-state#summary).
-  Use `null`, `false` or other appropriate value instead.
+  > **WARNING:** This module cannot hold `undefined` values (see
+  > https://redux.js.org/recipes/structuring-reducers/initializing-state#summary).
+  > Use `null`, `false` or other appropriate value instead.
 
 - [entities](./lib/entities/): Holds a collection of keyed entities. Keys are
   unique values used to identify and access an entity (usually an `id`).
@@ -57,7 +57,7 @@ See each module for in-depth documentation:
 - [request](./lib/request/): Holds the state of a single request (usually a
   network `fetch`).
 
-- [requestById](./lib/requestById/): Holds the state of a collection of request 
+- [requestById](./lib/requestById/): Holds the state of a collection of request
   (usually a network `fetch`).
 
 - [utils](./lib/utils/): Various convenience utilities to reduce Redux
