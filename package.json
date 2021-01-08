@@ -21,8 +21,8 @@
     "lib": "./lib",
     "example": "./examples"
   },
-  "main": "./dist/es5/",
-  "module": "./lib/",
+  "main": "./dist/",
+  "module": "./dist/",
   "repository": "https://github.com/redradix/redukers.git",
   "scripts": {
     "build": "yarn build:clean && yarn build:es5",
