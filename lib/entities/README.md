@@ -13,6 +13,7 @@ function entities(
     update?: Pattern,
     mergeById?: Pattern,
     updateById?: Pattern,
+    removeById?: Pattern,
     reset?: Pattern,
   },
 ): Reducer
@@ -48,6 +49,16 @@ type MergeByIdAction = {
   payload: {
     id: string,
     data: any,
+  },
+}
+
+/*
+ * [removeById]: remove entity `id` from collection.
+ */
+type RemoveByIdAction = {
+  type: string,
+  payload: {
+    id: string,
   },
 }
 
