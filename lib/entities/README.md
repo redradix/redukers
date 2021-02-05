@@ -71,4 +71,14 @@ function getOne(id: string, state: State): any
  * Returns all entities as an array.
  */
 function getAsList(state: State): any[]
+
+/*
+ * Returns some entities as an array.
+ */
+function getSomeAsList(ids: string[], state: State): any[]
+
+/*
+ * Returns some entities as an object.
+ */
+function getSomeAsObject(ids: string[], state: State): { [k in ids]: any }
 ```
