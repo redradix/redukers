@@ -95,7 +95,7 @@ function getIsDoneById(id: string, state: State): boolean
 /*
  * Returns `true` if the request had been successful at least once.
  */
-function getHadSucceedById(id: string, state: State): boolean
+function getHadSucceededById(id: string, state: State): boolean
 
 /*
  * Returns `true` if the request had errored at least once.

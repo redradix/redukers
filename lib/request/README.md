@@ -92,7 +92,7 @@ function getIsDone(state: State): boolean
 /*
  * Returns `true` if the request had been successful at least once.
  */
-function getHadSucceed(state: State): boolean
+function getHadSucceeded(state: State): boolean
 
 /*
  * Returns `true` if the request had errored at least once.
