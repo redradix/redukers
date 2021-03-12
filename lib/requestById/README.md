@@ -86,4 +86,24 @@ function getErrorById(id:string, state: State): any
  * Returns `true` if the request has never been started or is in progress.
  */
 function getIsLoadingById(id:string, state: State): any
+
+/*
+ * Returns `true` if the request has ended loading (error or success)
+ */
+function getIsDoneById(id: string, state: State): boolean
+
+/*
+ * Returns `true` if the request had been successful at least once.
+ */
+function getHadSucceedById(id: string, state: State): boolean
+
+/*
+ * Returns `true` if the request had errored at least once.
+ */
+function getHadErroredById(id: string, state: State): boolean
+
+/*
+ * Returns `true` if the request had had completed (either succeeded or errored)
+ */
+function getHadCompletedById(id: string, state: State): boolean
 ```

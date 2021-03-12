@@ -77,10 +77,30 @@ function getIsError(state: State): boolean
 /*
  * Returns the error associated with the request (if any).
  */
-function getError(state: State): any
+function getError(state: State): Error
 
 /*
  * Returns `true` if the request has never been started or is in progress.
  */
-function getIsLoading(state: State): any
+function getIsLoading(state: State): boolean
+
+/*
+ * Returns `true` if the request has ended loading (error or success)
+ */
+function getIsDone(state: State): boolean
+
+/*
+ * Returns `true` if the request had been successful at least once.
+ */
+function getHadSucceed(state: State): boolean
+
+/*
+ * Returns `true` if the request had errored at least once.
+ */
+function getHadErrored(state: State): boolean
+
+/*
+ * Returns `true` if the request had had completed (either succeeded or errored)
+ */
+function getHadCompleted(state: State): boolean
 ```
