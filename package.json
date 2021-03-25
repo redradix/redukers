@@ -22,7 +22,7 @@
     "example": "./examples"
   },
   "main": "./dist/",
-  "module": "./dist/",
+  "module": "./lib/",
   "repository": "https://github.com/redradix/redukers.git",
   "scripts": {
     "build": "yarn build:clean && yarn build:es5",
