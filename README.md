@@ -5,6 +5,7 @@
 ![License](https://badgen.net/npm/license/redukers)
 ![Dependencies](https://badgen.net/david/dep/redradix/redukers)
 ![Size](https://badgen.net/bundlephobia/min/redukers)
+![CI](https://github.com/redradix/redukers/actions/workflows/testing/badge.svg)
 
 Reusable Redux atoms. Provides composable data structures in form of a reducer
 and its accompanying selectors.
